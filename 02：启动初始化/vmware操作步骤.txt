@@ -1,0 +1,4 @@
+1、在vmware虚拟机中， 按照课程内容生成hd.img
+2、将hd.img拷贝到windows主机里，使用starwindconverter工具把img转换为hd.vmdk(virtual disk type选择SCSI格式)
+3、创建新的vmware虚拟机，硬盘选择hd.vmdk，就可以加载HelloOS
+4、如果HelloOS加载成功，但是提示'hd0,msdos1'错误，则重新制作镜像，并且修改grub.cfg里的这行为'hd0,msdos1'为'hd0'即可。
